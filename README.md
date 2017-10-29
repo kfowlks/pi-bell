@@ -3,10 +3,15 @@ pi zero door bell
 
 
 TODO: Build PI Zero Tool Chain based on latest version of RASPBIAN STRETCH LITE (https://www.raspberrypi.org/downloads/raspbian/)
+
 1) Pull RASPBIAN STRETCH LITE from repo
 2) Automate WIFI configuration (preconfig/use setup code from google coder)
 3) Enable v4l2 PI Camera driver i.e. bcm2835-v4l2
-4) 
+4) Install Motion to capture video motion events (capture video / send mqtt triggers )
+*** BEWARE *** Latest Kernel 4.9.58+ is does not ship with V4L LoopbackDevice
+5) Install / Configure Motion - Loopback Devicehttp://www.lavrsen.dk/foswiki/bin/view/Motion/LoopbackDevice
+6) Test GSTREAMER from loopback device
+7) Build gstreamer two way call application with Python
   
 
 Enable Camera by editing /boot/config
@@ -24,7 +29,12 @@ Add the below to /etc/modules
 
 bcm2835-v4l2
 
+Aquire Additional Hardware
 
+ReSpeaker 2-Mics Pi HAT (Provides Speaker/Microphone interface and has GPIO for Doorbell button/ lil)
+AC to DV power board
+LIPO charger to provide power/charge (Act as a UPS for doorbell unit)
+unlatched Relay to trigger mechanical door bell.
 
 Testing Pi Zero Camera Streaming
 
