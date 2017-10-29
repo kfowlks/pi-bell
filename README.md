@@ -4,6 +4,8 @@ pi zero door bell
 
 TODO: Build PI Zero Tool Chain based on latest version of RASPBIAN STRETCH LITE (https://www.raspberrypi.org/downloads/raspbian/)
 
+TODO: Build OTA Software Upgrade
+
 1) Pull RASPBIAN STRETCH LITE from repo
 2) Automate WIFI configuration (preconfig/use setup code from google coder)
 3) Enable v4l2 PI Camera driver i.e. bcm2835-v4l2
@@ -30,11 +32,13 @@ Add the below to /etc/modules
 bcm2835-v4l2
 
 Aquire Additional Hardware
-
+160 Degree Wide Angle Lens Camera 5MP with IR 
 ReSpeaker 2-Mics Pi HAT (Provides Speaker/Microphone interface and has GPIO for Doorbell button/ lil)
 AC to DV power board
 LIPO charger to provide power/charge (Act as a UPS for doorbell unit)
-unlatched Relay to trigger mechanical door bell.
+Unlatched AC/DC TTL Relay to trigger mechanical door bell.
+Rugged Metal with LED
+3D Printed Custom Enclosure
 
 Testing Pi Zero Camera Streaming
 
